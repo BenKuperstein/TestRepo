@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeloScope - Real-Time News Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
+                        'serif': ['Roboto Slab', 'ui-serif', 'Georgia']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', ui-sans-serif, system-ui;
+            background-color: #f9fafb;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-[#3B82F6]">TeloScope</div>
+            <div class="space-x-4">
+                <a href="#features" class="text-gray-700 hover:text-[#3B82F6]">Features</a>
+                <a href="#solution" class="text-gray-700 hover:text-[#3B82F6]">How It Works</a>
+                <a href="#join" class="bg-[#3B82F6] text-white px-4 py-2 rounded-md hover:bg-[#2563EB]">Join Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-br from-[#3B82F6] to-[#8B5CF6] text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">TeloScope: Real-Time News Intelligence</h1>
+            <p class="text-xl max-w-2xl mx-auto mb-8">Transform the chaos of Telegram news into clear, credible insights with AI-powered intelligence.</p>
+            <a href="#join" class="bg-white text-[#3B82F6] px-6 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition">Get Early Access</a>
+        </div>
+    </header>
+
+    <section id="problem" class="container mx-auto px-4 py-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6 text-[#3B82F6]">The News Landscape Challenge</h2>
+            <p class="text-xl text-gray-700 mb-8">Today's news environment is fragmented, fast-moving, and often unreliable. Telegram has become a key source of real-time information, but navigating it is overwhelming.</p>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-red-500 mb-4">The Problem</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>✖️ News fragmented across channels</li>
+                        <li>✖️ Unfiltered and unverified content</li>
+                        <li>✖️ Lack of context and credibility</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-500 mb-4">Our Solution</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li>✓ AI-powered news aggregation</li>
+                        <li>✓ Real-time topic clustering</li>
+                        <li>✓ Credibility scoring</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-[#6366F1]">Key Features</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl mb-4 text-purple-500">🧠</div>
+                    <h3 class="text-xl font-semibold mb-4">AI Topic Clustering</h3>
+                    <p class="text-gray-700">Automatically group and connect related news stories in real-time.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl mb-4 text-teal-500">🔍</div>
+                    <h3 class="text-xl font-semibold mb-4">Credibility Scoring</h3>
+                    <p class="text-gray-700">Rate the trustworthiness of news sources and individual stories.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-4xl mb-4 text-blue-500">📊</div>
+                    <h3 class="text-xl font-semibold mb-4">Visual Insights</h3>
+                    <p class="text-gray-700">Interactive dashboards with graphs, maps, and trend visualizations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="container mx-auto px-4 py-16 text-center">
+        <h2 class="text-3xl font-bold mb-6 text-[#14B8A6]">Join the TeloScope Community</h2>
+        <p class="text-xl text-gray-700 max-w-2xl mx-auto mb-8">We're building a platform to make sense of digital news chaos. Help us shape the future of information intelligence.</p>
+        
+        <div class="max-w-md mx-auto">
+            <form class="bg-white shadow-md rounded-lg p-8">
+                <input type="email" placeholder="Enter your email" class="w-full px-4 py-3 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-[#3B82F6]">
+                <div class="mb-4">
+                    <label class="block mb-2 text-gray-700">I'm interested as a:</label>
+                    <div class="flex justify-center space-x-4">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="form-checkbox" value="developer">
+                            <span class="ml-2">Developer</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="form-checkbox" value="tester">
+                            <span class="ml-2">Early Tester</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="form-checkbox" value="investor">
+                            <span class="ml-2">Investor</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="w-full bg-[#3B82F6] text-white py-3 rounded-md hover:bg-[#2563EB] transition">
+                    Join Waitlist
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 TeloScope. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
