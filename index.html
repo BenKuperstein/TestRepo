@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeloScope - Real-Time News Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Roboto+Slab:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'ui-sans-serif', 'system-ui'],
+                        'serif': ['Roboto Slab', 'ui-serif', 'Georgia']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', ui-sans-serif, system-ui;
+            background-color: #f9fafb;
+        }
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            scroll-snap-align: start;
+        }
+        .slide-content {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            padding: 2.5rem;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        h1, h2 {
+            font-family: 'Roboto Slab', ui-serif, Georgia;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto">
+        <section class="slide bg-gradient-to-br from-[#3B82F6] to-[#8B5CF6] text-red" id="title">
+            <div class="slide-content text-center">
+                <h1 class="text-5xl font-bold mb-4 text-red">TeloScope</h1>
+                <h2 class="text-2xl text-red/90">Real-Time News Intelligence from Telegram</h2>
+            </div>
+        </section>
+
+        <section class="slide" id="problem">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-6 text-[#3B82F6]">The Problem</h2>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center">
+                        <span class="mr-3 text-red-500 font-bold text-xl">•</span>
+                        News is fragmented across multiple channels
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-red-500 font-bold text-xl">•</span>
+                        Telegram is a key source for real-time, unfiltered news – but it's chaotic
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-red-500 font-bold text-xl">•</span>
+                        Misinformation and unverified content are rampant
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-red-500 font-bold text-xl">•</span>
+                        Users lack tools to understand what's happening now and which sources to trust
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" id="solution">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-6 text-[#10B981]">The Solution: TeloScope</h2>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center">
+                        <span class="mr-3 text-green-500 font-bold text-xl">•</span>
+                        A Telegram-powered client that:
+                    </li>
+                    <ul class="ml-10 space-y-2">
+                        <li class="flex items-center">
+                            <span class="mr-3 text-blue-500 font-bold">—</span>
+                            Aggregates news from selected Telegram groups
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-blue-500 font-bold">—</span>
+                            Uses AI to unify similar stories into evolving topics
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-blue-500 font-bold">—</span>
+                            Rates credibility of both sources and stories
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-3 text-blue-500 font-bold">—</span>
+                            Visualizes news with dynamic maps, timelines and graphs
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" id="features">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-6 text-[#6366F1]">Key Features</h2>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center">
+                        <span class="mr-3 text-purple-500 font-bold text-xl">•</span>
+                        AI-Powered Topic Clustering
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-purple-500 font-bold text-xl">•</span>
+                        Real-Time Source Credibility Scoring
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-purple-500 font-bold text-xl">•</span>
+                        Auto-Summaries of Ongoing Events
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-purple-500 font-bold text-xl">•</span>
+                        Visual Dashboards: Graphs, Maps, Trends
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-purple-500 font-bold text-xl">•</span>
+                        Community-Driven Feedback and Curation
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" id="differentiation">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-6 text-[#14B8A6]">Why We're Different</h2>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center">
+                        <span class="mr-3 text-teal-500 font-bold text-xl">•</span>
+                        <strong>Telegram-Centric:</strong> Taps into the fastest-growing real-time news ecosystem
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-teal-500 font-bold text-xl">•</span>
+                        <strong>Smart Filtering:</strong> Filters noise using NLP and user feedback
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-teal-500 font-bold text-xl">•</span>
+                        <strong>Visual Context:</strong> See the "story arc" unfold across time and geography
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-teal-500 font-bold text-xl">•</span>
+                        <strong>AI + Crowd:</strong> Combines machine intelligence and human input
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" id="market">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-6 text-[#EC4899]">Market Potential</h2>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-center">
+                        <span class="mr-3 text-pink-500 font-bold text-xl">•</span>
+                        Journalists, analysts, activists, and informed citizens
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-pink-500 font-bold text-xl">•</span>
+                        Over 700M monthly Telegram users and growing
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-pink-500 font-bold text-xl">•</span>
+                        Rising demand for trustworthy, real-time news
+                    </li>
+                    <li class="flex items-center">
+                        <span class="mr-3 text-pink-500 font-bold text-xl">•</span>
+                        Expandable to other platforms (X, Reddit, WhatsApp)
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="slide" id="roadmap">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-6 text-[#F43F5E]">MVP Roadmap</h2>
+                <ol class="space-y-4 text-lg list-decimal pl-10">
+                    <li>Telegram ingestion and clustering of news topics</li>
+                    <li>Basic AI summaries per topic</li>
+                    <li>Source trust scoring (simple metrics)</li>
+                    <li>Interactive web/mobile dashboard</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="slide" id="call-to-action">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-6 text-[#6D28D9]">Join Us</h2>
+                <div class="text-lg">
+                    <p class="mb-4">We're looking for:</p>
+                    <ul class="ml-10 space-y-2 list-disc">
+                        <li>Developers</li>
+                        <li>Data Scientists (NLP)</li>
+                        <li>Designers</li>
+                        <li>Early testers and backers</li>
+                    </ul>
+                    <p class="mt-6 font-bold text-xl text-center">Let's make sense of chaos – together.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide bg-gradient-to-br from-[#3B82F6] to-[#8B5CF6] text-white" id="thank-you">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-6">Thank You!</h1>
+                <h2 class="text-3xl">Questions?</h2>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fade-in');
+                    }
+                });
+            }, observerOptions);
+
+            slides.forEach(slide => {
+                observer.observe(slide);
+            });
+        });
+    </script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</body>
+</html>
